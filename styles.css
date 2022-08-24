@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.inner_wrapper {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.outer_wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+}
+
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 90%;
+  padding-bottom: 2rem;
+}
+
+.wrapper_right-side {
+  padding: 2rem;
+  height: 100%;
+}
+
+.wrapper_right-side p:first-child {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  padding-bottom: 2rem;
+}
+
+.wrapper_right-side p:nth-child(3) {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0rem;
+  line-height: 180%;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: green;
+  color: white;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.wrapper_right-side span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper_right-side span h1 {
+  color: green;
+}
+
+.wrapper_right-side span p {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 1440px) {
+  .inner_wrapper {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+  .outer_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+  }
+
+  img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}

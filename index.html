@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <div class="outer_wrapper">
+      <div class="inner_wrapper">
+        <div class="">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/image-product-desktop.jpg"/>
+            <img src="images/image-product-mobile.jpg" alt="chanel perfume product" />
+          </picture>
+        </div>
+    
+        <div class="wrapper_right-side">
+         <p> perfume </p>
+         <h1 class="title"> Gabrielle Essence Eau De Parfum  </h1>
+          <p>A floral, solar and voluptuous
+            interpretation composed by Olivier Polge, Perfumer-Creator for the House
+            of CHANEL. </p> 
+            <span> <h1> $149.99 </h1> <p>$169.99 </p></span>  
+    
+            <button>
+              <svg style="
+              width: 1rem;
+          " id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"  fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+                <circle cx="25" cy="27" r="2" />
+                <circle cx="12" cy="27" r="2" />
+            </svg>
+              <span> Add to Cart </span>
+             </button>
+        </div>
+      </div>
+    </div>
+   
+    <script src="https://kit.fontawesome.com/60d7c5aa6b.js" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
